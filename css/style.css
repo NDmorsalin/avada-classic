@@ -33,7 +33,7 @@ button {
     padding: 0;
 }
 
-section{
+section,footer{
     padding: 5rem 0;
 }
 /* base end */
@@ -368,6 +368,115 @@ hr{
     background-size: cover;
     color: #fff;
 }
+.carousel-indicators [data-bs-target]{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+}
+.slide_img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem auto 2rem auto;
+}
+.stu{
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* buy section */
+.buy{
+    background: url('../img/home_cta_bottom_bg.webp') no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+.buy_btn.btn-outline-light{
+    font-weight: 700;
+    padding: 1rem 3rem;
+    border-width:2px ;
+    margin-top: 1.5rem;
+}
+.buy_btn.btn-outline-light:hover{
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+.buy_btn.btn-outline-light:focus{
+    box-shadow: none;
+}
+
+/* footer */
+.footer_section{
+    background: #333;
+}
+.footer_title{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.footer_text{
+    color: #8C8989;
+}
+.footer_link{
+    margin: .3rem 0;
+    display: inline-block;
+    transition: .2s;
+    color: #BFBFBF;
+}
+.footer_link:hover{
+color: #92D12F;
+}
+
+.footer_hr{
+    background: #757474;
+}
+
+.product_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product_name{
+    color: #cfcfcf;
+}
+.product_price{
+    color: #BFBFBF;
+}
+.product_img{
+    width: 10rem;
+    display: inline-block;
+}
+.copy_right{
+    background-color: #1d1b1b;
+    padding: 2rem 0;
+}
+.copy_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy_text{
+    color: #8C8989;
+    margin-bottom: 0;
+}
+.social_link{
+    color: #757474;
+    font-size: 1.2rem;
+    transition: .3s;
+    margin-left:1rem ;
+}
+.copy_link{
+    color: #BFBFBF;
+    transition: .3s;
+}
+.copy_link:hover,.social_link:hover{
+    color: #dfdfdf;
+}
+
 @media screen and (min-width:768px) {
     .nav_container{
         padding: 0;
@@ -522,6 +631,10 @@ hr{
         padding:5rem 0;
     }
     
+    .product_img{
+        width: 4rem;
+    }
+
 
 
 }
