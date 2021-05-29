@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap');
+
+
+/*     font-family: 'PT Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif; */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+p,
+a,
+div {
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+section{
+    padding: 5rem 0;
+}
+/* base end */
+
+.navigation_toggle_btn {
+    font-size: 2rem;
+}
+
+/* nav bar */
+
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: relative;
+    z-index: 10;
+
+    padding: 1rem 0;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav_ul {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* height: 0;
+    transition: height .5s; */
+    overflow: hidden;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+.nav_link {
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    transition: .5s;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    color: #333;
+}
+
+.navigation_toggle_btn {
+    font-size: 2rem;
+}
+
+.nav_menu.active .nav_ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: rgb(179, 168, 168);
+    left: 0;
+    top: 100%;
+}
+
+
+
+
+
+
+/* hero */
+.hero{
+    background: url('../img/home-hero-bg.jpg') no-repeat center;
+    background-size: cover;
+    
+    position: relative;
+    z-index: 1;
+}
+.hero_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+.hero_wrap{
+    text-align: center;
+}
+
+.hero_title{
+    font-size: 5rem;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 200;
+}
+.hero_subtitle{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #92D12F;
+    margin-bottom: 2rem;
+}
+
+.dd_btn.hero_btn{
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+    font-weight: bold;
+}
+.hero_wave{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+}
+
+/* app section */
+.app{
+    padding: 5rem 0;
+}
+.app_title{
+    font-size: 2.8rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+.app_card_container{
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 0 1.5rem  rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 3rem 0;
+}
+.app_card_title{
+    margin: 1.5rem 0;
+}
+.app_img{
+    width: 4rem;
+    height: 4rem;
+    background-color: #92D12F;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app_title-card{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* team section */
+.team_section{
+    background: url('../img/investment-team-home.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.team_section::after{
+    content: '';
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0,0,0,0.5);
+ z-index: -1;
+}
+
+
+/* article section */
+.article_section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+        ". lt lt lt lt lt lt lt lt lt lt ." 
+         "ri ri ri ri ri ri ri ri ri ri ri ri" 
+          ". rt rt rt rt rt rt rt rt rt rt ."
+        "li li li li li li li li li li li li"
+        ;
+   
+}
+.ltext{
+    grid-area: lt;
+}
+.rimg{
+    grid-area: ri;
+}
+.rtext{
+    grid-area: rt;
+}
+.limg{
+    grid-area: li;
+}
+.article_img{
+    overflow: hidden;
+}
+.article_img img{
+    transform: scale(1);
+    transition: .5s;
+}
+.article_img:hover img{
+    transform: scale(1.2);
+}
+.article_container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.article_text{
+    padding: 5rem 0;
+}
+.article_subtitle{
+    font-size: 1.1rem ;
+    color: #92D12F;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.ot{
+    background: #92D12F;
+    color: #fff;
+}
+
+
+/* feature section */
+.feature{
+    padding: 0;
+}
+
+.feature_text-container {
+    padding:5rem 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.business_section{
+    background: url('../img/home_next_level_bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* read more */
+.read_more > .ot{
+    padding: 3rem 0;
+}
+.read-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* card */
+.card_overlay{
+    position: relative;
+}
+
+.card_t-link{
+    color: #333;
+    display: block;
+    margin-top: 1rem;
+    transition: .3s;
+}
+.dt_ct{
+    margin-bottom: 1.5rem;
+}
+
+hr{
+    margin: .3rem 0;
+}
+
+.ct{
+    color: #333;
+    transition: .3s;
+}
+.card_t-link:hover,.ct:hover{
+    color: #92D12F;
+}
+.card-text.card_text{
+    margin: 1.5rem 0;
+}
+.c_btm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* overlay  */
+.card_overlay_container{
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+.card_overlay{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    color: #fff;
+    background-color: rgba(9, 172, 31, 0.5);
+    display: flex;
+    align-items: center;justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+.card_overlay_container:hover .card_overlay{
+    top: 0;
+}
+.overlay_wraper a{
+    color: #fff;
+}
+.overlay_icon{
+    display: flex;align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.o_icon{ 
+    width: 3rem ;
+    height: 3rem;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slicer{
+    background: url('../img/investment-team-home.webp') no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+@media screen and (min-width:768px) {
+    .nav_container{
+        padding: 0;
+    }
+
+    .nav_ul {
+        display: flex;
+        height: auto;
+        
+    }
+
+    .nav_link {
+        margin-right: 1rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        /* padding: .5rem .5rem 2rem .5rem; */
+        padding: 0;
+        padding-top: .5rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav_menu.active .nav_ul {
+        display: flex;
+        position: unset;
+        width: unset;
+        height: auto;
+        background-color: unset;
+        left: unset;
+        top: unset;
+    }
+
+    .nav_link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #92D12F;
+        left: 100%;
+        top: 0;
+        transition: .5s;
+    }
+
+    .nav_link:hover {
+        color: #92D12F !important;
+    }
+
+    .nav_link:hover::after {
+        left: 0;
+    }
+
+    .navigation_toggle_btn {
+        display: none;
+    }
+
+    .dd_container {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        background: url('../img/city-widget-bg-fade-.jpg') repeat-x left;
+        display: none;
+        /* display: block; */
+        border-top: 3px solid #92D12F;
+        z-index: 20;
+    }
+
+    .dd_container.dd_container-investor{
+        background: unset;
+        background-color: #fff;
+    }
+
+    .dd_item {
+        padding: 0 2rem;
+    }
+
+    .dd_title {
+        padding: 2rem 0 1rem 0;
+        margin: 0;
+    }
+
+    .vacancies {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .vacancies span {
+        display: inline-block;
+        padding: .1rem .5rem;
+        color: #fff;
+        background-color: #92D12F;
+    }
+
+    .dd_btn {
+        display: inline-block;
+        padding: .5rem 1.5rem;
+        background-color: #92D12F;
+        color: #fff;
+        margin-bottom: 1.5rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .dd_btn.dd_btn-investors {
+        display: block;
+    }
+
+    .btn_wraper {
+        text-align: center;
+        padding: 0 34px;
+    }
+
+    .dd_title-investor {
+        font-size: 1.1rem;
+    }
+
+    .iv_m_bg,
+    .crypto_img img {
+        transform: scale(1);
+        transition: .5s;
+        object-fit: cover;
+
+    }
+
+    .iv_m_bg:hover,
+    .crypto_img:hover img {
+        transform: scale(1.1);
+    }
+
+    .col-md-6.w-d {
+        width: 47% !important;
+    }
+
+    .crypto_img {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .crypto_title {
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .dd_padding {
+        padding: 0 34px;
+    }
+
+    .nav_item:hover .dd_container {
+        display: block;
+    }
+
+    .feature_text-container {
+        padding:5rem 0;
+    }
+    
+
+
+}
+
+@media screen and (min-width:992px) {
+    .nav_link {
+        font-size: 1.2rem;
+        margin-right: 2rem;
+
+    }
+    .article_section{
+        grid-template-areas: 
+        ".  lt lt lt lt . ri ri ri ri ri ri"
+        "li li li li li li . rt rt rt rt  ."
+        ;
+    }
+    .feature_text-container {
+        padding:0rem 1rem;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    
+    .feature_text-container {
+        padding:0rem 3.2rem;
+    }
+}
